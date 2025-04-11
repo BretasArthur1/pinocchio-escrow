@@ -29,7 +29,7 @@ pub fn process_take_instruction(accounts: &[AccountInfo], _data: &[u8]) -> Progr
     // Unpack all required accounts for the take operation
     let [
         taker, maker, mint_x, mint_y, taker_ata_x, taker_ata_y, maker_ata_y, vault, escrow,
-        _token_program, _system_program
+        _token_program, _system_program, _remaining @ ..
     ] = accounts else {
         return Err(pinocchio::program_error::ProgramError::NotEnoughAccountKeys);
     };

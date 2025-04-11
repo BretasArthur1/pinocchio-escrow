@@ -29,7 +29,8 @@ pub fn process_refund_instruction(accounts: &[AccountInfo], _data: &[u8]) -> Pro
         escrow, 
         vault, 
         _token_program, 
-        _system_program
+        _system_program,
+        _remaining @..
     ] = accounts else {
         return Err(ProgramError::NotEnoughAccountKeys);
     };
