@@ -57,10 +57,6 @@ solana program deploy <path-to-program.so>
 2. Taker calls `Take` to accept and swap tokens.
 3. If no taker, maker can call `Refund` to get tokens back.
 
-## Resources
-- [Solana Documentation](https://solana.com/docs)
-- [Solana Escrow Example (PaulX)](https://paulx.dev/blog/2021/01/14/programming-on-solana-an-introduction/)
-- [Anchor Book](https://www.anchor-lang.com/)
 
 ## License
 MIT 
